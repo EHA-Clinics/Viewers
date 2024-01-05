@@ -1,5 +1,5 @@
 # Use an official Node runtime as a base image
-FROM node:18.16.1-bullseye
+FROM node:18.16.1-bullseye as json-copier
 
 # Set the working directory in the container
 RUN mkdir /usr/src/app
