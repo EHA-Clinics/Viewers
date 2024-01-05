@@ -12,7 +12,7 @@ COPY modes /usr/src/app/modes
 COPY platform /usr/src/app/platform
 
 
-FROM node:18.16.1-slim as builder
+FROM node:18.16.1-bullseye as builder
 RUN apt-get update && apt-get install -y build-essential python3
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
